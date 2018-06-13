@@ -34,7 +34,7 @@ export default class ReactScrollDetector extends React.Component {
       return onScrollBottom(top)
     }
 
-    const isScrolledToTop = top < this.lastScrollTop
+    const isScrolledToTop = top <= this.lastScrollTop
 
     this.lastScrollTop = top
 
