@@ -20,7 +20,7 @@ export default class ReactScrollDetector extends React.Component {
   constructor(props) {
     super(props)
 
-    this.onScroll = debounce(this.onScroll, this.props.accuracy)
+    this.onScroll = debounce(this.onScroll, this.props.debounceTime)
   }
 
   onScroll(el) {
