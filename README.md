@@ -39,32 +39,29 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        ...
-        <ReactScrollDetector
-          debounceTime={500}
-          accuracy={90}
-          onScrollBottom={this.handleScrollBottom}
-          onScrollTop={this.handleScrollTop}
-        >
-          <div style={{ minHeight: '500px', maxHeight: '500px', overflow: 'auto' }}>
-            ...
-          </div>
-        </ReactScrollDetector>
-      </div>
-    );
+      <ReactScrollDetector
+        debounceTime={500}
+        accuracy={90}
+        onScrollBottom={this.handleScrollBottom}
+        onScrollTop={this.handleScrollTop}
+      >
+        <div style={{ minHeight: '500px', maxHeight: '500px', overflow: 'auto' }}>
+          ...
+        </div>
+      </ReactScrollDetector>
+    )
   }
 }
 ```
 
 ## API
 
-| Prop             |  Type      |  Description                                 |  Default  |
-| ---              | ---        | ---                                          | ---       |
-| onScrollBottom   | Function   |  Triggers when scroll reaches bottom         | () => {}  |
-| onScrollTop      | Function   |  Triggers when scroll reaches top            | () => {}  |
-| accuracy         | Number     |  Accuracy of detection                       |  90       |
-| debounceTime     | Number     |  D etection debounce time in milli seconds   |  500      |
+| Prop             |  Type      |  Description                                 |  Default     |
+| ---              | ---        | ---                                          | ---          |
+| onScrollBottom   | Function   |  Triggers when scroll reaches bottom         | (top) => {}  |
+| onScrollTop      | Function   |  Triggers when scroll reaches top            | (top) => {}  |
+| accuracy         | Number     |  Accuracy of detection                       | 90           |
+| debounceTime     | Number     |  D etection debounce time in milli seconds   | 500          |
 
 
 ## License
