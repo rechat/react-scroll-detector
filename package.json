@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "build": "nwb build-react-component",
+    "deploy": "gh-pages -d demo/dist",
     "clean": "nwb clean-module && nwb clean-demo",
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
@@ -35,6 +36,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.9.1",
+    "gh-pages": "^1.2.0",
     "nwb": "0.21.x",
     "prettier": "^1.13.5",
     "prettier-eslint": "^8.8.1",
