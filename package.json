@@ -18,20 +18,39 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "debounce": "^1.1.0",
+    "prop-types": "^15.6.1"
+  },
   "peerDependencies": {
     "react": "16.x"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.9.1",
     "nwb": "0.21.x",
+    "prettier": "^1.13.5",
+    "prettier-eslint": "^8.8.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
   },
-  "author": "",
+  "author": "Ramin Mousavi",
   "homepage": "",
   "license": "MIT",
   "repository": "",
   "keywords": [
-    "react-component"
+    "react-component",
+    "react-scroll",
+    "scroll-detect",
+    "scroll-detector",
+    "react-scroll-detect",
+    "react-scroll-detector"
   ]
 }
